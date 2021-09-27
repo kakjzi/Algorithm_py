@@ -16,7 +16,7 @@
 >
 > map 의 return 값은 iterator를 반환한다.
 
-<img src="C:\Users\원원테크\AppData\Roaming\Typora\typora-user-images\image-20210927121041798.png" alt="image-20210927121041798" style="zoom: 67%;" />
+![image](https://user-images.githubusercontent.com/82758364/134859239-a9acd6c2-58c6-46e4-aa0f-874e4c87b9db.png)
 
 참고 (https://coding-groot.tistory.com/22)
 
@@ -43,7 +43,7 @@
     	print('{:^10}'.format('*' * i))
     ```
 
-    ![image-20210927150701420](C:\Users\원원테크\AppData\Roaming\Typora\typora-user-images\image-20210927150701420.png)
+![image](https://user-images.githubusercontent.com/82758364/134859306-26321c10-356d-4838-adb7-6286a81a0df6.png)
 
 
 
