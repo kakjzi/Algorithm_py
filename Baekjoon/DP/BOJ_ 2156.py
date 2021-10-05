@@ -25,7 +25,7 @@ for i in range(3,n):
     # case 1    O     X     O      O
     # case 2    O     O     X      O
     # case 3    X     O     O      X    ...
-    dp[i] = max(dp[i-1], dp[i-2]+podoju[i] ,dp[i-3]+podoju[i]+podoju[i-1]s)
+    dp[i] = max(dp[i-1], dp[i-2]+podoju[i] ,dp[i-3]+podoju[i]+podoju[i-1])
 print(dp[n-1])
     
 
