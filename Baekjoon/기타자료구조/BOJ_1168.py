@@ -3,19 +3,28 @@
 import sys
 from collections import deque
 
-
 n,k = map(int,sys.stdin.readline().strip().split())
 list = [i for i in range(1,n+1)]
 
+n,k = map(int,sys.stdin.readline().strip().split())
+list = [i for i in range(1,n+1)]
 answer = deque()
 temp = deque() 
 temp.extend(list)
 num = 0
 
+
 for _ in range(n):
     temp.rotate(-2)
     answer.append(str(temp.popleft()))
 print("<"+', '.join(answer)+">")
+
+for i in range(n):
+    temp.rotate(-k+1)
+    answer.append(str(temp.popleft()))
+print("<"+', '.join(answer)+">")
+
+
 
 ## 문자열 연결방법
 # , : 띄어쓰기 포함하여 문자열을 연결한다.
@@ -43,7 +52,7 @@ print("<"+', '.join(answer)+">")
 # tree[tree_size:tree_size + N] = [1] * N
 # for i in range(tree_size - 1, 0, -1):
 #    tree[i] = tree[i + i] + tree[i + i + 1]
-   
+
 # order = 0
 # answer = []
 # for i in range(N, 0, -1):
@@ -53,3 +62,10 @@ print("<"+', '.join(answer)+">")
 
 # print('<', end='')
 # print(', '.join(str(x) for x in answer), end='>')
+
+
+## sep : 구분자를 다른 문자로 대체 가능 .
+
+
+# 자꾸 시간초과가 ;;;;
+
